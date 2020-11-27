@@ -26,3 +26,5 @@ Route::get('/hello-world', 'TestController@helloWorld');
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/over-mij', 'AboutController@aboutMe');
