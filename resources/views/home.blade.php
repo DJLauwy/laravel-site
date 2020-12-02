@@ -1,9 +1,13 @@
 @extends("layout")
 
 @section("page_title")
-	Over mij
+	Home
 @endsection
 
 @section("article")
-	<p>Nu is dit de About Me</p>
+	<p>Welcome!</p>
+@endsection
+
+@section("aside")
+	<p>Welcome!</p>
 @endsection

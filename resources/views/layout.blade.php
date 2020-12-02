@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
         <!-- Diverse -->
-        <link rel="icon" href="#" type="image/icon type">
+        <link rel="icon" href="img/djlauwy.ico" type="image/icon type">
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <!-- Title -->
@@ -23,25 +23,23 @@
 
         <!-- Navigation -->
         <nav>
-            
+            <img src="img/djlauwy.png" alt="DJ Lauwy logo" class="nav__logo">
+            <!-- <ul>
+                
+            </ul> -->
         </nav>
-
-        <!-- Header -->
-        <header>
-            <h1>@yield('page_title')</h1>
-        </header>
 
         <!-- Main -->
         <main>
 
             <!-- Article -->
             <article>
-                @yield('content')
+                @yield('article')
             </article>
 
             <!-- Sidebar -->
             <aside>
-                
+                @yield('aside')
             </aside>
             
         </main>
