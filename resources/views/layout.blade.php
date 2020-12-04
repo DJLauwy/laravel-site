@@ -25,10 +25,15 @@
         <nav>
             <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo">
             <ul>
-                <li><a href="{{ route('aboutme') }}">About me</a></li>
+                <li><a href="{{ route('aboutme') }}">Biography</a></li>
                 <li><a href="{{ route('discography') }}">Discography</a></li>
                 <li><a href="{{ route('tte') }}">The Trance Event</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
+            </ul>
+            <ul>
+                <li>fb</li>
+                <li>ig</li>
+                <li>yt</li>
             </ul>
         </nav>
 
