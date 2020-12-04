@@ -14,7 +14,7 @@
 
         <!-- Diverse -->
         <link rel="icon" href="img/djlauwy.ico" type="image/icon type">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 
         <!-- Title -->
         <title>@yield('page_title') | DJ Lauwy</title>
@@ -23,10 +23,13 @@
 
         <!-- Navigation -->
         <nav>
-            <img src="img/djlauwy.png" alt="DJ Lauwy logo" class="nav__logo">
-            <!-- <ul>
-                
-            </ul> -->
+            <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo">
+            <ul>
+                <li><a href="{{ route('aboutme') }}">About me</a></li>
+                <li><a href="{{ route('discography') }}">Discography</a></li>
+                <li><a href="{{ route('tte') }}">The Trance Event</a></li>
+                <li><a href="{{ route('contact') }}">Contact</a></li>
+            </ul>
         </nav>
 
         <!-- Main -->

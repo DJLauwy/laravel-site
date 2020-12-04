@@ -28,6 +28,7 @@ Route::get('/thetranceevent', 'TheTranceEventController@theTranceEvent')->name('
 
 //Contact page
 Route::get('/contact', 'ContactController@contactMe')->name('contact');
+Route::post('/contact', 'ContactController@handleForm')->name('contact.handle');
 
 
 

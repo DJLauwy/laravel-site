@@ -10,4 +10,14 @@ class ContactController extends Controller
     {
     	return view('contact');
     }
+
+    public function handleForm(Request $request)
+    {
+    	dd($request->get("name"));
+    	$data = $request->validate(
+    		[
+    			'name' => 'required|min:8'
+    		]
+    	);
+    }
 }

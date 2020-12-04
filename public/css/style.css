@@ -1,11 +1,8 @@
 *{
 	margin:0;
 	padding:0;
-	box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, p{
 	color:#fff;
+	box-sizing: border-box;
 }
 
 body{
@@ -24,11 +21,6 @@ nav{
 
 .nav__logo{
 	height:7vh;
-}
-
-ul{
-	display: flex;
-	list-style-type: none;
 }
 
 /* Main */

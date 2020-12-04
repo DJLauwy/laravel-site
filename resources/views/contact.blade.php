@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="copyright" content="Copyrighted by &copy;Copyrighthouse http://www.copyrighthouse.nl/">
-		<link rel="icon" href="#" type="image/icon type">
-		<meta name="author" content="Lau de Hoop">
-		<meta name="description" content="#">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Contact</title>
-		<!-- <link rel="stylesheet" type="text/css" href="#"> -->
+@extends("layout")
 
-	</head>
-	<body>
-		<h1>Contact</h1>
-	</body>
-</html>
+@section("page_title")
+	Contact
+@endsection
+
+@section("article")
+	<h1>FORM</h1>
+	<form action="{{ route('contact.handle') }}" method="POST">
+		@csrf
+		<label>Name</label>
+		<input type="text" value="" name="name">
+		@error('name')
+		{{ $message }}
+		@enderror
+		<button type="submit">Opslaan</button>
+	</form>
+@endsection
+
+@section("aside")
+	<p>Contact</p>
+@endsection
