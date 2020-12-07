@@ -14,9 +14,16 @@ body{
 }
 
 /* Text */
-h1, p{
+h1, h2, p{
 	font-family:TTEF, sans-serif;
 	color:#000;
+}
+
+h2{
+	font-size:20pt;
+	font-weight: 600;
+	margin-bottom: 0;
+	margin-left:16px;
 }
 
 /* Navigation */
@@ -26,6 +33,7 @@ nav{
 	padding-left:1.5vh;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	background-color: #000;
 }
 
@@ -35,17 +43,24 @@ nav{
 
 ul{
 	margin-bottom: 0;
-	width:50%;
 	display: flex;
 	list-style-type: none;
+	align-items: center;
 	color:#fff;
-	padding-left:1em;
 	font-size: 16pt;
+}
+
+.nav__socials > li{
+	padding:.4em;
 }
 
 li{
 	padding:1em;
 	font-family: TTEF, sans-serif;
+}
+
+li:nth-of-type(1){
+	padding-left:1.5em;
 }
 
 ul > li a{
@@ -56,12 +71,6 @@ ul > li a{
 ul > li a:hover{
 	color:royalblue;
 	text-decoration: none;
-}
-
-ul:nth-of-type(2){
-	text-align: right;
-	width:20%;
-	margin-left: 30%;
 }
 
 /* Main */
@@ -75,13 +84,52 @@ main{
 /* Article */
 article{
 	padding:1em;
-	width:40%;
+	width:700px;
 	height:40vh;
 	background-color: #fff;
 }
 
+/* Extra */
+.wrapper__extra{
+	width:700px;
+	margin-top:.2em;
+	height:20vh;
+	background-color: #fff;
+}
+
+.wrapper__extra-title{
+	display: flex;
+	align-items: center;
+	background-color: #ddd;
+	width:100%;
+	height:5vh;
+}
+
+.wrapper__extra-content{
+	height:15vh;
+}
+
 /* Aside */
 aside{
-	width:20%;
+	width:350px;
 	height:80vh;
+}
+
+@media screen and (max-width: 1125px){
+	main{
+		display: block;
+	}
+
+	article{
+		width:100%;
+	}
+
+	.wrapper__extra{
+		width: 100%;
+	}
+
+	aside{
+		margin-top:.2em;
+		width:100%;
+	}
 }

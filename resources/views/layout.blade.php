@@ -23,17 +23,20 @@
 
         <!-- Navigation -->
         <nav>
-            <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo">
             <ul>
+                <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
                 <li><a href="{{ route('aboutme') }}">Biography</a></li>
                 <li><a href="{{ route('discography') }}">Discography</a></li>
                 <li><a href="{{ route('tte') }}">The Trance Event</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
-            <ul>
+            <ul class="nav__socials">
                 <li>fb</li>
                 <li>ig</li>
                 <li>yt</li>
+                <li>tw</li>
+                <li>tc</li>
+                <li>sp</li>
             </ul>
         </nav>
 
@@ -41,9 +44,19 @@
         <main>
 
             <!-- Article -->
-            <article>
-                @yield('article')
-            </article>
+            <section class="wrapper">
+                <article>
+                    @yield('article')
+                </article>
+                <div class="wrapper__extra">
+                    <div class="wrapper__extra-title">
+                        @yield('extra-title')
+                    </div>
+                        <div class="wrapper__extra-content">
+                        @yield('extra')
+                    </div>
+                </div>
+            </section>
 
             <!-- Sidebar -->
             <aside>
