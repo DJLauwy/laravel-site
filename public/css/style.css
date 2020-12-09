@@ -41,6 +41,16 @@ nav{
 	height:7vh;
 }
 
+/* Mobile Navigation */
+.no-desktop{
+	display: none;
+}
+
+.hamburger{
+	display: none;
+}
+
+/* Desktop Navigation */
 ul{
 	margin-bottom: 0;
 	display: flex;
@@ -116,10 +126,33 @@ aside{
 }
 
 @media screen and (max-width: 1125px){
+	/* Main */
 	main{
 		display: block;
 	}
 
+	/* Mobile Navigation */
+	.no-desktop{
+		display: block;
+	}
+
+	.hamburger{
+		display: block;
+		color:#fff;
+		padding:1.5em;
+		font-size: 16pt;
+	}
+
+	nav > ul{
+		display: none;
+	}
+
+	/* Desktop Navigation */
+	li:nth-of-type(1){
+		padding-left:1em;
+	}
+
+	/* Article */
 	article{
 		width:100%;
 	}
@@ -128,6 +161,7 @@ aside{
 		width: 100%;
 	}
 
+	/* Sidebar */
 	aside{
 		margin-top:.2em;
 		width:100%;

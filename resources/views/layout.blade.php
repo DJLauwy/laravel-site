@@ -15,6 +15,7 @@
         <!-- Diverse -->
         <link rel="icon" href="img/djlauwy.ico" type="image/icon type">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/menu.css') }}">
         <script src="https://kit.fontawesome.com/16946e2d22.js" crossorigin="anonymous"></script>
 
         <!-- Title -->
@@ -23,15 +24,24 @@
     <body>
 
         <!-- Mobile Navigation -->
-        <input type="checkbox" checked>
+        <input type="checkbox" id="menu-switch" checked>
         <div class="mobile-nav">
-            <label>
-                <i class="fas fa-times"></i>
+            <label for="menu-switch" class="get-menu">
+                <i class="fas fa-times close-button"></i>
             </label>
+            <div class="mobile-nav__wrapper">
+                <ol>
+                    <li><a href="{{ route('aboutme') }}">Biography</a></li>
+                    <li><a href="{{ route('discography') }}">Discography</a></li>
+                    <li><a href="{{ route('tte') }}">The Trance Event</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                </ol>
+            </div>
         </div>
 
         <!-- Desktop Navigation -->
         <nav> 
+            <a href="{{ route('home') }}" class="no-desktop"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
             <ul>
                 <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
                 <li><a href="{{ route('aboutme') }}">Biography</a></li>
@@ -47,8 +57,8 @@
                 <li>tc</li>
                 <li>sp</li>
             </ul>
-            <label>
-                <i class="fas fa-bars hamburger"></i>
+            <label for="menu-switch" class="get-menu hamburger">
+                <i class="fas fa-bars"></i>
             </label>
         </nav>
 
