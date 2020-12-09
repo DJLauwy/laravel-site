@@ -31,6 +31,7 @@
             </label>
             <div class="mobile-nav__wrapper">
                 <ol>
+                    <li><a href="{{ route('news') }}">News</a></li>
                     <li><a href="{{ route('aboutme') }}">Biography</a></li>
                     <li><a href="{{ route('discography') }}">Discography</a></li>
                     <li><a href="{{ route('tte') }}">The Trance Event</a></li>
@@ -44,6 +45,7 @@
             <a href="{{ route('home') }}" class="no-desktop"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
             <ul>
                 <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
+                <li><a href="{{ route('news') }}">News</a></li>
                 <li><a href="{{ route('aboutme') }}">Biography</a></li>
                 <li><a href="{{ route('discography') }}">Discography</a></li>
                 <li><a href="{{ route('tte') }}">The Trance Event</a></li>

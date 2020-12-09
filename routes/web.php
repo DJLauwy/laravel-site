@@ -33,6 +33,10 @@ Route::get('/thetranceevent', 'TheTranceEventController@theTranceEvent')->name('
 Route::get('/contact', 'ContactController@contactMe')->name('contact');
 Route::post('/contact', 'ContactController@handleForm')->name('contact.handle');
 
+//News page
+Route::get('/news', 'NewsController@newsPage')->name('news');
+Route::get('/news/{id}', 'NewsController@newsPost')->where('id', '[0-9]+');
+
 
 
 // -- VOORBEELDEN VAN ROUTES -- //
