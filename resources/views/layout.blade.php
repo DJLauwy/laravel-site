@@ -15,14 +15,23 @@
         <!-- Diverse -->
         <link rel="icon" href="img/djlauwy.ico" type="image/icon type">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+        <script src="https://kit.fontawesome.com/16946e2d22.js" crossorigin="anonymous"></script>
 
         <!-- Title -->
         <title>@yield('page_title') | DJ Lauwy</title>
     </head>
     <body>
 
-        <!-- Navigation -->
-        <nav>
+        <!-- Mobile Navigation -->
+        <input type="checkbox" checked>
+        <div class="mobile-nav">
+            <label>
+                <i class="fas fa-times"></i>
+            </label>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav> 
             <ul>
                 <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
                 <li><a href="{{ route('aboutme') }}">Biography</a></li>
@@ -38,6 +47,9 @@
                 <li>tc</li>
                 <li>sp</li>
             </ul>
+            <label>
+                <i class="fas fa-bars hamburger"></i>
+            </label>
         </nav>
 
         <!-- Main -->
