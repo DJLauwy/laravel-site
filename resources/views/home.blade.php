@@ -13,12 +13,12 @@
 @endsection
 
 @section("extra")
-	<!-- <a href="{{ route('news', ['id' => 3]) }}">Nieuws met id 3</a> -->
+	{{-- <a href="{{ route('news', ['id' => 3]) }}">Nieuws met id 3</a> 
 
 
-<!-- @foreach($newsitems as $news)
+@foreach($newsitems as $news)
 		<a href="{{ route('news', ['id' => $news->id]) }}">{{ $news->title }}</a>
-	@endoreach --> 
+	@endoreach --}}
 
 
 @endsection

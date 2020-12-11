@@ -52,3 +52,6 @@ Route::get('/news/{id}', 'NewsController@newsPost')->where('id', '[0-9]+');
 // });
 
 // Route::get('/over-mij', 'AboutController@aboutMe');
+Auth::routes();
+
+// Route::get('/home', 'HomeController@homePage')->name('home');
