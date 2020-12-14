@@ -4,6 +4,6 @@
 	The Trance Event
 @endsection
 
-@section("article")
+@section("content")
 	<p>The Trance Event is a radioshow by DJ Lauwy.</p>
 @endsection

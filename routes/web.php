@@ -37,7 +37,10 @@ Route::post('/contact', 'ContactController@handleForm')->name('contact.handle');
 Route::get('/news', 'NewsController@newsPage')->name('news');
 Route::get('/news/{id}', 'NewsController@newsPost')->where('id', '[0-9]+');
 
-
+//Admin page
+Route::middleware( 'auth' )->prefix( '/admin' )->group( function () {
+	Route::get('/about-me', 'AboutController@aboutMe')->name('aboutme');
+});
 
 // -- VOORBEELDEN VAN ROUTES -- //
 

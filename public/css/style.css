@@ -26,6 +26,10 @@ h2{
 	margin-left:16px;
 }
 
+.required{
+	color:red;
+}
+
 /* Navigation */
 nav{
 	width:100%;
@@ -97,6 +101,28 @@ article{
 	width:700px;
 	height:40vh;
 	background-color: #fff;
+	overflow-y: auto;
+}
+
+article > form{
+	display: flex;
+	flex-direction: column;
+}
+
+article > form > label{
+	margin-top:.5em;
+	margin-bottom:0;
+}
+
+textarea{
+	height:19vh;
+}
+
+.send-btn{
+	margin-top:1em;
+	width:10%;
+	color:#fff;
+	background-color: #111;
 }
 
 /* Extra */
@@ -117,6 +143,10 @@ article{
 
 .wrapper__extra-content{
 	height:15vh;
+}
+
+.wrapper__contact{
+	height:60.3vh;
 }
 
 /* Aside */

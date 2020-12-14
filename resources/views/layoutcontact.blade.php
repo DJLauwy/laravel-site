@@ -69,17 +69,9 @@
 
             <!-- Article -->
             <section class="wrapper">
-                <article>
+                <article class="wrapper__contact">
                     @yield('content')
                 </article>
-                <div class="wrapper__extra">
-                    <div class="wrapper__extra-title">
-                        @yield('extra-title')
-                    </div>
-                        <div class="wrapper__extra-content">
-                        @yield('extra')
-                    </div>
-                </div>
             </section>
 
             <!-- Sidebar -->

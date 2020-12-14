@@ -4,7 +4,7 @@
 	Home
 @endsection
 
-@section("article")
+@section("content")
 	<p>Discography!</p>
 @endsection
 

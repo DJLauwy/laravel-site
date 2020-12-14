@@ -4,6 +4,6 @@
 	Over mij
 @endsection
 
-@section("article")
+@section("content")
 	<p>Nu is dit de About Me</p>
 @endsection
