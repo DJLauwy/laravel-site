@@ -17,12 +17,11 @@ class ContactController extends Controller
     	$data = $request->validate(
     		[
     			'name' => 'required|min:2|max:75',
-                'email' => 'email address',
                 'subject' => 'required|string',
                 'message' => 'required|min:20'
     		]
     	);
-
+        
         dd($data);
     }
 }

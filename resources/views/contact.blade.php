@@ -9,6 +9,7 @@
 	<p>All fields with <span class="required">*</span> are required!</p>
 	<form action="{{ route('contact.handle') }}" method="POST">
 		@csrf
+
 		<label>Name<span class="required">*</span></label>
 		<input type="text" value="{{ old('name') }}" name="name" required>
 		@error('name')
