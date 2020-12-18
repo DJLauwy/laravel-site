@@ -36,7 +36,7 @@ Route::get('/news/{id}', 'NewsController@newsPost')->where('id', '[0-9]+');
 
 //Admin page
 Route::middleware( 'auth' )->prefix( '/admin' )->group( function () {
-	Route::get('/admin', 'AdminController@adminCMS')->name('admin');
+	Route::get('/', 'AdminController@adminCMS')->name('admin');
 });
 
 // -- VOORBEELDEN VAN ROUTES -- //

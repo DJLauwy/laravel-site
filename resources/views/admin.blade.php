@@ -1,1 +1,1 @@
-@extends("lauyout")
+@extends("layout")
