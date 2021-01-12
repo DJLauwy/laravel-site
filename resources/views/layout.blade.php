@@ -36,6 +36,9 @@
                     <li><a href="{{ route('discography') }}">Discography</a></li>
                     <li><a href="{{ route('tte') }}">The Trance Event</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <!-- Temporary Part -->
+                    <li><a href="{{ route('productshop') }}">Productshop</a></li>
+                    <!-- End Temporary -->
                 </ol>
             </div>
         </div>
@@ -50,6 +53,9 @@
                 <li><a href="{{ route('discography') }}">Discography</a></li>
                 <li><a href="{{ route('tte') }}">The Trance Event</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
+                <!-- Temporary Part -->
+                <li><a href="{{ route('productshop') }}">Productshop</a></li>
+                <!-- End Temporary -->
             </ul>
             <ul class="nav__socials">
                 <li>fb</li>

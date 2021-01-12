@@ -34,6 +34,9 @@ Route::post('/contact', 'ContactController@handleForm')->name('contact.handle');
 Route::get('/news', 'NewsController@newsPage')->name('news');
 Route::get('/news/{id}', 'NewsController@newsPost')->where('id', '[0-9]+');
 
+// (Temporary) Productshop page
+Route::get('/productshop', 'ProductshopController@productShop')->name('productshop');
+
 //Admin page
 Route::middleware( 'auth' )->prefix( '/admin' )->group( function () {
 	Route::get('/', 'AdminController@adminCMS')->name('admin');
