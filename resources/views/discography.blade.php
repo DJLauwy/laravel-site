@@ -1,22 +1,26 @@
 @extends("layoutextra")
 
 @section("page_title")
-	Home
+	Discography
 @endsection
 
 @section("content")
 
-	<p>Discography!</p>
+	<h1><b>Discography</b></h1>
+	<hr>
 	@foreach($discography as $track)
-		<h2>Artist: {{ $track->artist }} </h2>
-		<h3>Title: {{ $track->title }} </h3>
-		<p>Genre: {{ $track->genre }} <br>
-		Released: {{ $track->year }} </p>
+		<div class="content__track">
+			<div>
+				<img src="" class="content__track-img">
+			</div>
+			<div>
+				<h3><b>Artist:</b> {{ $track->artist }} </h3>
+				<h4><b>Title:</b> {{ $track->title }} </h4>
+				<p><b>Genre:</b> {{ $track->genre }} <br>
+				<b>Released:</b> {{ $track->year }} </p>
+			</div>
+		</div>
 		<hr />
 	@endforeach
 
-@endsection
-
-@section("aside")
-	<p>Music</p>
 @endsection

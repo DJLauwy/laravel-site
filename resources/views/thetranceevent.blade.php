@@ -1,4 +1,4 @@
-@extends("layout")
+@extends("layoutextra")
 
 @section("page_title")
 	The Trance Event

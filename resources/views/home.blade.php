@@ -13,11 +13,20 @@
 @endsection
 
 @section("extra")
-
 	
+
 	@foreach ($news as $news)
-    	<p>{{ $news->title }}</p>
+		<div class="content__news">
+			<div>
+				<img src="" class="content__track-img">
+			</div>
+			<div>
+    			<p><b>{{ $news->title }}</b></p>
+    			<p>{{ $news->header }}</p>
+    		</div>
+    	</div>
 	@endforeach
+
 
 	{{--
 	<a href="{{ route('news', ['id' => 1]) }}">Nieuws met id 1</a> 
@@ -26,6 +35,7 @@
 		<a href="{{ route('news', ['id' => $news->id]) }}">{{ $news->title }}</a>
 	@endforeach
 	--}}
+
 
 @endsection
 

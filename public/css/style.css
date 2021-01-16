@@ -26,6 +26,11 @@ h2{
 	margin-left:16px;
 }
 
+h3{
+	font-size:20pt;
+	font-weight: 600;
+}
+
 .required{
 	color:red;
 }
@@ -176,6 +181,37 @@ aside{
 	height:80vh;
 }
 
+/* Discography */
+.content__track{
+	display: flex;
+}
+
+.content__track > div:nth-of-type(1){
+	width:15vh;
+	height:15vh;
+	border:1px solid #000;
+	margin-right:10px;
+}
+
+.content__track-img{
+	width:100%;
+}
+
+.content__news{
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__news > div:nth-of-type(1){
+	width:100px;
+	height:100px;
+	border:1px solid #000;
+	margin-right:10px;
+}
+.content__news > div:nth-of-type(2){
+	width:80%;
+}
+
 @media screen and (max-width: 1125px){
 	/* Main */
 	main{
@@ -212,9 +248,19 @@ aside{
 		width: 100%;
 	}
 
+	.wrapper__extended{
+		width:90vw;
+	}
+
+	.content__news > div:nth-of-type(2){
+		width:60%;
+		font-size: 8pt;
+	}
+
 	/* Sidebar */
 	aside{
 		margin-top:.2em;
 		width:100%;
 	}
+
 }
