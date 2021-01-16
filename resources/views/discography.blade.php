@@ -11,7 +11,7 @@
 	@foreach($discography as $track)
 		<div class="content__track">
 			<div>
-				<img src="" class="content__track-img">
+				<img src="{{ $track->cover }}" class="content__track-img">
 			</div>
 			<div>
 				<h3><b>Artist:</b> {{ $track->artist }} </h3>
