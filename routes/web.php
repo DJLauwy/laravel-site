@@ -37,6 +37,8 @@ Route::get('/news/{id}', 'NewsController@newsPost')->where('id', '[0-9]+');
 // (Temporary) Productshop page
 Route::get('/productshop', 'ProductshopController@productShop')->name('productshop');
 
+Route::get('/account', 'AccountController@accountLogin')->name('account');
+
 //Admin page
 Route::middleware( 'auth' )->prefix( '/admin' )->group( function () {
 	Route::get('/', 'AdminController@adminCMS')->name('admin');

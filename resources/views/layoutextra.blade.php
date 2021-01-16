@@ -65,19 +65,14 @@
         </nav>
 
         <!-- Main -->
-        <main>
+        <main class="main__extended">
 
             <!-- Article -->
             <section class="wrapper">
-                <article class="wrapper__contact">
+                <article class="wrapper__extended">
                     @yield('content')
                 </article>
             </section>
-
-            <!-- Sidebar -->
-            <aside>
-                @yield('aside')
-            </aside>
             
         </main>
 
