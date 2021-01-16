@@ -68,6 +68,10 @@ ul{
 	padding:.4em;
 }
 
+.nav__socials-icons{
+	width:30px;
+}
+
 li{
 	padding:1em;
 	font-family: TTEF, sans-serif;
@@ -150,6 +154,7 @@ textarea{
 
 .wrapper__extra-content{
 	height:15vh;
+	padding:1em;
 }
 
 .wrapper__contact{

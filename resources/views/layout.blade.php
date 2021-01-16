@@ -58,12 +58,12 @@
                 <!-- End Temporary -->
             </ul>
             <ul class="nav__socials">
-                <li>fb</li>
-                <li>ig</li>
-                <li>yt</li>
-                <li>tw</li>
-                <li>tc</li>
-                <li>sp</li>
+                <li><a href="https://www.facebook.com/officialdjlauwy" target="_blank"><img src="{{ asset('img/fb.png') }}" class="nav__socials-icons"></a></li>
+                <li><a href="https://www.instagram.com/DJLauwy/" target="_blank"><img src="{{ asset('img/ig.png') }}" class="nav__socials-icons"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCHXjBraDDQumUR-mNgooCMQ" target="_blank"><img src="{{ asset('img/yt.png') }}" class="nav__socials-icons"></a></li>
+                <li><a href="https://twitter.com/DJLauwy" target="_blank"><img src="{{ asset('img/tw.png') }}" class="nav__socials-icons"></a></li>
+                <li><a href="https://www.twitch.tv/djlauwy" target="_blank"><img src="{{ asset('img/tc.png') }}" class="nav__socials-icons"></a></li>
+                <li><a href="https://open.spotify.com/artist/7KCAeHLa26CpHopAb8sLh7?si=6ZY2Cae2SjeCbU5Oceww0Q" target="_blank"><img src="{{ asset('img/sp.png') }}" class="nav__socials-icons"></a></li>
             </ul>
             <label for="menu-switch" class="get-menu hamburger">
                 <i class="fas fa-bars"></i>
