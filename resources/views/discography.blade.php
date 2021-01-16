@@ -22,5 +22,7 @@
 		</div>
 		<hr />
 	@endforeach
+	
+	{{ $discography->links() }}
 
 @endsection

@@ -9,7 +9,8 @@ class DiscographyController extends Controller
 {
     public function discographyMusic()
     {
-    	$discography = Discography::all();
+        //$discography = Discography::all();
+        $discography = Discography::paginate(10);
     	return view('discography', ['discography' => $discography]);
 
     }
