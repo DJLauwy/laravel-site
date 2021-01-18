@@ -5,6 +5,7 @@
 @endsection
 
 @section("content")
+    <a href="{{ route('admin') }}"><p> > Admin</p></a>
 	<!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->

@@ -41,7 +41,9 @@ Route::get('/account', 'AccountController@accountLogin')->name('account');
 
 //Admin page
 Route::middleware( 'auth' )->prefix( '/admin' )->group( function () {
-	Route::get('/', 'AdminController@adminCMS')->name('admin');
+	Route::get('/', 'AdminController@adminSection')->name('admin');
+	Route::get('/adminnews', 'AdminController@adminNews')->name('adminnews');
+	Route::get('/adminmusic', 'AdminController@adminMusic')->name('adminmusic');
 });
 
 // -- VOORBEELDEN VAN ROUTES -- //
