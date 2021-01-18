@@ -159,7 +159,7 @@ textarea{
 
 .wrapper__extra-content{
 	height:15vh;
-	padding:1em;
+	/*padding:1em;*/
 }
 
 .wrapper__contact{
@@ -186,6 +186,10 @@ aside{
 	display: flex;
 }
 
+.content__readmore-btn{
+	color:blue;
+}
+
 .content__track > div:nth-of-type(1){
 	width:15vh;
 	height:15vh;
@@ -194,22 +198,24 @@ aside{
 }
 
 .content__track-img{
-	width:100%;
+	width:15vh;
+	height:15vh;
 }
 
 .content__news{
 	display: flex;
 	justify-content: space-between;
+	height:15vh;
 }
 
 .content__news > div:nth-of-type(1){
-	width:100px;
-	height:100px;
+	width:15vh;
+	height:15vh;
 	border:1px solid #000;
-	margin-right:10px;
 }
 .content__news > div:nth-of-type(2){
 	width:80%;
+	margin:1em;
 }
 
 @media screen and (max-width: 1125px){

@@ -18,7 +18,7 @@
 	@foreach ($news as $news)
 		<div class="content__news">
 			<div>
-				<img src="" class="content__track-img">
+				<img src="{{ $news->image }}" class="content__track-img">
 			</div>
 			<div>
     			<p><b>{{ $news->title }}</b></p>
