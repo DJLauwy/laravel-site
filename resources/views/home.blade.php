@@ -9,14 +9,17 @@
 @endsection
 
 @section("extra-title")
-	<h2>News</h2>
+	<h2>Latest news article</h2>
 @endsection
 
 @section("extra")
-	
+
+    <?php
+        $numPosts = count($news);
+    ?>
 
 	@foreach ($news as $news)
-		<div class="content__news">
+		<a href="news/{{ $news->id }}" class="content__news">
 			<div>
 				<img src="{{ $news->image }}" class="content__track-img">
 			</div>
@@ -24,12 +27,12 @@
     			<p><b>{{ $news->title }}</b></p>
     			<p>{{ $news->header }}</p>
     		</div>
-    	</div>
+    	</a>
 	@endforeach
 
 
 	{{--
-	<a href="{{ route('news', ['id' => 1]) }}">Nieuws met id 1</a> 
+	<a href="{{ route('news', ['id' => 1]) }}">Nieuws met id 1</a>
 
 	@foreach($news as $news)
 		<a href="{{ route('news', ['id' => $news->id]) }}">{{ $news->title }}</a>
