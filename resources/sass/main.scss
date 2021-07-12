@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:TTEF;
+    src: url(font/Myriad Pro Regular.ttf);
+}
+
+body{
+    background-color: #111;
+}
+
+/* Text */
+h1, h2, p{
+    font-family:TTEF, sans-serif;
+    color:#000;
+}
+
+h2{
+    font-size:20pt;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left:16px;
+}
+
+h3{
+    font-size:20pt;
+    font-weight: 600;
+}
+
+.required{
+    color:red;
+}
+
+/* Navigation */
+nav{
+    width:100%;
+    height:10vh;
+    padding-left:1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.nav__logo{
+    height:7vh;
+}
+
+/* Mobile Navigation */
+.no-desktop{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* Desktop Navigation */
+ul{
+    margin-bottom: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    color:#fff;
+    font-size: 16pt;
+}
+
+.nav__socials > li{
+    padding:.4em;
+}
+
+.nav__socials-icons{
+    width:30px;
+}
+
+li{
+    padding:1em;
+    font-family: TTEF, sans-serif;
+}
+
+li:nth-of-type(1){
+    padding-left:1.5em;
+}
+
+ul > li a{
+    color:#fff;
+    transition: .5s;
+}
+
+ul > li a:hover{
+    color:royalblue;
+    text-decoration: none;
+}
+
+/* Main */
+main{
+    width: 100%;
+    padding:5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__extended{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Article */
+article{
+    padding:1em;
+    width:700px;
+    height:40vh;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+article > form{
+    display: flex;
+    flex-direction: column;
+}
+
+article > form > label{
+    margin-top:.5em;
+    margin-bottom:0;
+}
+
+textarea{
+    height:19vh;
+}
+
+.send-btn{
+    margin-top:1em;
+    width:10%;
+    color:#fff;
+    background-color: #111;
+}
+
+/* Extra */
+.wrapper__extra{
+    width:700px;
+    margin-top:.2em;
+    height:20vh;
+    background-color: #fff;
+}
+
+.wrapper__extra-title{
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    width:100%;
+    height:5vh;
+}
+
+.wrapper__extra-content{
+    height:15vh;
+    /*padding:1em;*/
+}
+
+.wrapper__contact{
+    height:60.3vh;
+}
+
+.wrapper__extended{
+    width:60vw;
+    height: auto;
+}
+
+.nav-link{
+    color:#000;
+}
+
+/* Aside */
+aside{
+    width:350px;
+    height:80vh;
+}
+
+/* Discography */
+.content__track{
+    display: flex;
+}
+
+.content__readmore-btn{
+    color:blue;
+}
+
+.content__track > div:nth-of-type(1){
+    width:15vh;
+    height:15vh;
+    border:1px solid #000;
+    margin-right:10px;
+}
+
+.content__track-img{
+    width:15vh;
+    height:15vh;
+}
+
+.content__news{
+    display: flex;
+    justify-content: space-between;
+    height:15vh;
+}
+
+.content__news > div:nth-of-type(1){
+    width:15vh;
+    height:15vh;
+    border:1px solid #000;
+}
+.content__news > div:nth-of-type(2){
+    width:80%;
+    margin:1em;
+}
+
+@media screen and (max-width: 1125px){
+    /* Main */
+    main{
+        display: block;
+    }
+
+    /* Mobile Navigation */
+    .no-desktop{
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+        color:#fff;
+        padding:1.5em;
+        font-size: 16pt;
+    }
+
+    nav > ul{
+        display: none;
+    }
+
+    /* Desktop Navigation */
+    li:nth-of-type(1){
+        padding-left:1em;
+    }
+
+    /* Article */
+    article{
+        width:100%;
+    }
+
+    .wrapper__extra{
+        width: 100%;
+    }
+
+    .wrapper__extended{
+        width:90vw;
+    }
+
+    .content__news > div:nth-of-type(2){
+        width:60%;
+        font-size: 8pt;
+    }
+
+    /* Sidebar */
+    aside{
+        margin-top:.2em;
+        width:100%;
+    }
+
+}
