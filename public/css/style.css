@@ -13,6 +13,13 @@ body{
 	background-color: #111;
 }
 
+.pagination-devider{
+    width:100%;
+    height:9vh;
+}
+
+
+
 /* Text */
 h1, h2, p{
 	font-family:TTEF, sans-serif;
@@ -35,6 +42,8 @@ h3{
 	color:red;
 }
 
+
+
 /* Navigation */
 nav{
 	width:100%;
@@ -50,6 +59,8 @@ nav{
 	height:7vh;
 }
 
+
+
 /* Mobile Navigation */
 .no-desktop{
 	display: none;
@@ -58,6 +69,8 @@ nav{
 .hamburger{
 	display: none;
 }
+
+
 
 /* Desktop Navigation */
 ul{
@@ -96,6 +109,8 @@ ul > li a:hover{
 	text-decoration: none;
 }
 
+
+
 /* Main */
 main{
 	width: 100%;
@@ -110,6 +125,8 @@ main{
 	align-items: center;
 	justify-content: center;
 }
+
+
 
 /* Article */
 article{
@@ -141,12 +158,17 @@ textarea{
 	background-color: #111;
 }
 
+
+
 /* Extra */
 .wrapper__extra{
 	width:700px;
 	margin-top:.2em;
 	height:20vh;
 	background-color: #fff;
+    /* TEMPORARY */
+    overflow: hidden;
+    /* --------- */
 }
 
 .wrapper__extra-title{
@@ -170,17 +192,81 @@ textarea{
 .wrapper__extended{
 	width:60vw;
 	height: auto;
+    position: relative;
+    /*padding-bottom:10vh;*/
+}
+
+.wrapper__banner{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper__banner > img{
+    width:50px;
+    height:50px;
+    padding:2px;
+    object-fit: cover;
+}
+
+.wrapper__banner > h1{
+    margin:0;
+    padding-left:15px;
 }
 
 .nav-link{
 	color:#000;
 }
 
+.wrapper__extended > nav{
+    width:100%;
+    padding:0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wrapper__extended > nav > ul{
+    margin:0 5px;
+    width:100%;
+    justify-content: space-between;
+}
+
+.wrapper__extended > nav > ul > li{
+    padding:0;
+    border-radius:20px;
+    overflow: hidden;
+    height:40px;
+    width:40px;
+    transition: all .1s ease-in-out;
+}
+
+.wrapper__extended > nav > ul > li:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 5px #fff;
+}
+
+.wrapper__extended > nav > ul > li > span{
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper__extended > nav > ul > li > a{
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* Aside */
 aside{
 	width:350px;
 	height:80vh;
 }
+
+
 
 /* Discography */
 .content__track{
@@ -202,6 +288,8 @@ aside{
 	width:15vh;
 	height:15vh;
 }
+
+
 
 /* News */
 .content__news{
@@ -243,12 +331,19 @@ aside{
     width:100%;
 }
 
+
+
 /* Responsive */
 @media screen and (max-width: 1125px){
+
+
+
 	/* Main */
 	main{
 		display: block;
 	}
+
+
 
 	/* Mobile Navigation */
 	.no-desktop{
@@ -266,10 +361,14 @@ aside{
 		display: none;
 	}
 
+
+
 	/* Desktop Navigation */
 	li:nth-of-type(1){
 		padding-left:1em;
 	}
+
+
 
 	/* Article */
 	article{
@@ -285,9 +384,11 @@ aside{
 	}
 
 	.content__news > div:nth-of-type(2){
-		width:60%;
+		width:100%;
 		font-size: 8pt;
 	}
+
+
 
 	/* Sidebar */
 	aside{
@@ -295,4 +396,17 @@ aside{
 		width:100%;
 	}
 
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+
+
+    /* Main */
+    main {
+        display: block;
+        padding:20px;
+    }
 }

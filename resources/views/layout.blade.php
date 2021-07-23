@@ -44,7 +44,7 @@
         </div>
 
         <!-- Desktop Navigation -->
-        <nav> 
+        <nav>
             <a href="{{ route('home') }}" class="no-desktop"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
             <ul>
                 <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
@@ -54,7 +54,7 @@
                 <li><a href="{{ route('tte') }}">The Trance Event</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
                 <!-- Temporary Part -->
-                    <li><a href="{{ route('productshop') }}">Productshop</a></li>
+                    <li><a href="{{ route('productshop') }}">Shop</a></li>
                 <!-- End Temporary -->
             </ul>
             <ul class="nav__socials">
@@ -92,12 +92,12 @@
             <aside>
                 @yield('aside')
             </aside>
-            
+
         </main>
 
         <!-- Footer -->
         <footer>
-            
+
         </footer>
 
         <!-- Optional JavaScript; choose one of the two! -->

@@ -5,5 +5,6 @@
 @endsection
 
 @section("content")
-	<p>Nu is dit de About Me</p>
+    <h1><b>Biography</b></h1>
+    <hr>
 @endsection

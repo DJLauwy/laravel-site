@@ -15,5 +15,6 @@
 		<p>{{ $item->date }}</p>
 		<hr>
 	@endforeach
+    <div class="pagination-devider"></div>
 	{{ $product->links() }}
 @endsection
