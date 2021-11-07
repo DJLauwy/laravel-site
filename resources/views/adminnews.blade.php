@@ -7,17 +7,18 @@
 @section("content")
 	<a href="{{ route('admin') }}"><p> < Terug</p></a>
 	<hr>
-	@foreach($news as $news)
+	@foreach($news as $new)
 		<div class="content__track">
 			<div>
-				<img src="{{ $news->image }}" class="content__track-img">
+				<img src="{{ $new->image }}" class="content__track-img">
 			</div>
 			<div>
-				<h3>{{ $news->title }}</h3>
-				<p><b>{{ $news->header }}</b></p>
-				<p>{{ $news->post }}</p>
+				<h3>{{ $new->title }}</h3>
+				<p><b>{{ $new->header }}</b></p>
+				<p>{{ $new->post }}</p>
 			</div>
 		</div>
 		<hr>
 	@endforeach
+    {{$news->links()}}
 @endsection

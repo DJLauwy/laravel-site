@@ -1,27 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\News;
-use App\Discography;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Discography;
+use App\News;
 
 class AdminController extends Controller
 {
-	public function adminSection(){
-		return view('admin');
-	}
+    public function adminSection()
+    {
+        return view('admin');
+    }
 
     public function adminNews()
     {
-    	$news = DB::table('news')->get();
-    	return view('adminnews', ['news' => $news]);
+        return view('adminnews', ['news' => News::paginate()]);
     }
 
     public function adminMusic()
     {
-    	$discography = DB::table('discographies')->get();
-    	return view('adminmusic', ['discographies' => $discography]);
+        return view('adminmusic', ['discography' => Discography::paginate(10)]);
     }
 }

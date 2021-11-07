@@ -6,7 +6,7 @@
 
 @section("content")
 	<a href="{{ route('admin') }}"><p> < Terug</p></a>
-	@foreach($discographies as $track)
+	@foreach($discography as $track)
 		<div class="content__track">
 			<div>
 				<img src="{{ $track->cover }}" class="content__track-img">
@@ -20,4 +20,5 @@
 		</div>
 		<hr>
 	@endforeach
+    {{$discography->links()}}
 @endsection

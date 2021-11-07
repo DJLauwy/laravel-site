@@ -7,17 +7,18 @@
 @section("content")
 	<h1><b>News</b></h1>
 	<hr>
-	@foreach($news as $news)
+	@foreach($news as $new)
 		<div class="content__track">
 			<div>
-				<img src="{{ $news->image }}" class="content__track-img">
+				<img src="{{ $new->image }}" class="content__track-img">
 			</div>
 			<div>
-				<h3>{{ $news->title }}</h3>
-				<p>{{ $news->header }}</p>
-				<a href="news/{{ $news->id }}"><p class="content__readmore-btn responsive"><b>Read more...</b></p></a>
+				<h3>{{ $new->title }}</h3>
+				<p>{{ $new->header }}</p>
+				<a href="news/{{ $new->id }}"><p class="content__readmore-btn responsive"><b>Read more...</b></p></a>
 			</div>
 		</div>
 	<hr>
 	@endforeach
+        {{ $news->links() }}
 @endsection

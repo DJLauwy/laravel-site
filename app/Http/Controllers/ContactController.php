@@ -8,21 +8,20 @@ class ContactController extends Controller
 {
     public function contactMe()
     {
-    	return view('contact');
+        return view('contact');
     }
 
     public function handleForm(Request $request)
     {
-    	//dd($request->get("name"));
-    	$data = $request->validate(
-    		[
-    			'name' => 'required|min:2|max:75',
-                // 'email' => 'email:rfc,dns',
+        $data = $request->validate(
+            [
+                'name' => 'required|min:2|max:75',
+                'email' => 'required|email',
                 'subject' => 'required|string',
-                'message' => 'required|min:20'
-    		]
-    	);
-        
-        dd($data);
+                'message' => 'required|min:5'
+            ]
+        );
+
+        return redirect(route('home'));
     }
 }
