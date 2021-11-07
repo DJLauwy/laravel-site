@@ -15,7 +15,7 @@
 @section("extra")
 
     <?php
-        $numPosts = count($news);
+    $numPosts = count($news);
     ?>
 
 	@foreach ($news as $news)

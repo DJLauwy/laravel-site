@@ -32,12 +32,12 @@
             <div class="mobile-nav__wrapper">
                 <ol>
                     <li><a href="{{ route('news') }}">News</a></li>
-                    <li><a href="{{ route('aboutme') }}">Biography</a></li>
+                    <li><a href="{{ route('aboutMe') }}">Biography</a></li>
                     <li><a href="{{ route('discography') }}">Discography</a></li>
-                    <li><a href="{{ route('tte') }}">The Trance Event</a></li>
+                    <li><a href="{{ route('theTranceEvent') }}">The Trance Event</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
                     <!-- Temporary Part -->
-                        <li><a href="{{ route('productshop') }}">Productshop</a></li>
+                        <li><a href="{{ route('productShop') }}">Productshop</a></li>
                     <!-- End Temporary -->
                 </ol>
             </div>
@@ -49,12 +49,12 @@
             <ul>
                 <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
                 <li><a href="{{ route('news') }}">News</a></li>
-                <li><a href="{{ route('aboutme') }}">Biography</a></li>
+                <li><a href="{{ route('aboutMe') }}">Biography</a></li>
                 <li><a href="{{ route('discography') }}">Discography</a></li>
-                <li><a href="{{ route('tte') }}">The Trance Event</a></li>
+                <li><a href="{{ route('theTranceEvent') }}">The Trance Event</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
                 <!-- Temporary Part -->
-                    <li><a href="{{ route('productshop') }}">Shop</a></li>
+                    <li><a href="{{ route('productShop') }}">Shop</a></li>
                 <!-- End Temporary -->
             </ul>
             <ul class="nav__socials">

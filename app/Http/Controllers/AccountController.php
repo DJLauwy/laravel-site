@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class AccountController extends Controller
 {
-	public function accountLogin(){
-    	return view('account');
+    public function accountLogin()
+    {
+        return view('account');
     }
 }
