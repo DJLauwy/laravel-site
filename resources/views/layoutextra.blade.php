@@ -21,7 +21,7 @@
         <!-- Title -->
         <title>@yield('page_title') | DJ Lauwy</title>
     </head>
-    <body>
+    <body class="body__extended">
 
         <!-- Mobile Navigation -->
         <input type="checkbox" id="menu-switch" checked>
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Desktop Navigation -->
-        <nav> 
+        <nav>
             <a href="{{ route('home') }}" class="no-desktop"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
             <ul>
                 <a href="{{ route('home') }}"> <img src="{{ asset('img/djlauwy.png') }}" alt="DJ Lauwy logo" class="nav__logo"> </a>
@@ -79,12 +79,12 @@
                     @yield('content')
                 </article>
             </section>
-            
+
         </main>
 
         <!-- Footer -->
         <footer>
-            
+
         </footer>
 
         <!-- Optional JavaScript; choose one of the two! -->

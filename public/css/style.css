@@ -13,6 +13,12 @@ body{
 	background-color: #111;
 }
 
+.body__extended{
+    /*background-image:url('../img/background__extended.png');*/
+    background-position: center;
+    background-size: cover;
+}
+
 .pagination-devider{
     width:100%;
     height:9vh;
