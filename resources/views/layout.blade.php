@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/menu.css') }}">
         <script src="https://kit.fontawesome.com/16946e2d22.js" crossorigin="anonymous"></script>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Title -->
         <title>@yield('page_title') | DJ Lauwy</title>
